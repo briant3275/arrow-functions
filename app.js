@@ -199,8 +199,8 @@ console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-// undefined
+// Student
 // 2. What is "this" when joe.scopeArrow() is invoked?
-// also undefined
+// Window
 // 3. Explain why "this" is different when an arrow function is used.
-// they dont appear to be different although I suspect they should be and I believe it would have something to do with the scope of arrow notation being different
+// The this context is not reset when using arrowing functions so it uses the global scope, this refers to window. When using non-arrow functions the this context uses the enclosing scope and this refers to student
